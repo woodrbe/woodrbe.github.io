@@ -1,43 +1,27 @@
-<a href="http://creatrix.us/demo/santago/">
-	<img src="https://d13yacurqjgara.cloudfront.net/users/149279/screenshots/1828193/santago-free_christmas_sales_and_affiliate_landing_page_template.jpg" alt="SantaGo - Free Christmas Sales and Affiliate HTML5 Landing Page Template">
-</a>
+# Christmasscavenger
 
-SantaGo - Free Christmas Sales and Affiliate HTML5 Landing Page Template
--------------------
-SantaGo is another free Bootstrap HTML Christmas sales and affiliate page template built and distributed by EvenFly Team as a small Cristmas gift under Creative Commons 3.0 license.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
-As long the codes already well commented, I don't think there's any additional help guide necessary. Even so, feel free to contact us through support@evenfly.com if you have any question/suggestion.
+## Development server
 
-Live Demo: http://demo.evenfly.com/view?theme=SantaGo
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-View the post on Dribbble: https://dribbble.com/shots/1828193
+## Code scaffolding
 
-If you like this template, you may like to see our other templates available here http://evenfly.com
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Or follow us on
+## Build
 
-https://www.facebook.com/evenflyteam
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-https://twitter.com/EvenFlyTeam
+## Running unit tests
 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-License
--------------------
-Creative Commons Attribution 3.0 Unported https://creativecommons.org/licenses/by/3.0/
+## Running end-to-end tests
 
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-Special Thanks!
--------------------
-Christmas icons: https://dribbble.com/srizon/buckets/247589-SantaGo
+## Further help
 
-Background Image: http://unsplash.com/
-
-Animate.css: https://github.com/daneden/animate.css
-
-Hasin Hyder: https://github.com/hasinhayder/StickySocialBar
-
-Scott Schiller: https://github.com/scottschiller/Snowstorm
-
-NiceScroll: https://github.com/inuyaksa/jquery.nicescroll
-
-Matthieu Aussaguel: https://github.com/matthieua/WOW
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
