@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="">
+        <style>
+                .modal-dialog {
+                          width: 460px;
+                        }
+                .modal-header {
+                    background-color: #f53f2c;;
+                    padding:16px 16px;
+                    color:#FFF;
+                    border-bottom:2px dashed #f53f2c;;
+                 }
+                </style>
+                
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +19,14 @@
     <!-- ===========================
     THEME INFO
     =========================== -->    
-    <meta name="description" content="SantaGo is another free Bootstrap HTML Christmas sales and affiliate page template built and distributed by EvenFly Team as a small Cristmas gift under Creative Commons 3.0 license.">
-    <meta name="keywords" content="Christmas Template, Free Christmas Landing Page, Christmas Affiliate Landing Page, Free Christmas Sales Page Template">
-    <meta name="author" content="Mamun Srizon">
+    <meta name="description" content="Christmas Adventure.">
+    <meta name="keywords" content="Christmas">
+    <meta name="author" content="Ben Woodring">
     
     <!-- ===========================
     SITE TITLE
     =========================== -->
-    <title>SantaGo - Free Christmas Sales and Affiliate Landing Page Template</title>
+    <title>Christmas Adventure 2018</title>
     
     <!-- ===========================
     FAVICONS
@@ -37,6 +49,7 @@
     FONTS
     =========================== -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,600|Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     
     <!-- ===========================
     GOOGLE ANALYTICS (Optional)
@@ -91,38 +104,45 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <img src="img/o1.png" alt="">
-                <h4>Puzzle 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalSocial">
+                        Puzzle #1
+                </button>
+                
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o2.png" alt="">
-                <h4>Puzzle 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                        Puzzle #2
+                </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o3.png" alt="">
-                <h4>Puzzle 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                        Puzzle #3
+                </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o4.png" alt="">
-                <h4>Puzzle 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                        Puzzle #4
+                </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o5.png" alt="">
-                <h4>Puzzle 5</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                        Puzzle #5
+                </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o6.png" alt="">
-                <h4>Puzzle 6</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                        Puzzle #6
+                </button>
             </div><!--ITEM END-->
         </div><!--OVERVIEW ITEMS END-->
     </div><!--OVERVIEW SECTION END-->
@@ -141,15 +161,32 @@
                 <h2>Reveal <span class="highlight">final puzzle </span></h2>
                 <p></p>
 
-                <a href="" class="btn btn-default">Reveal</a>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                    Reveal
+                  </button>
+
             </div><!--CALL-TO-ACTION CONTENT END-->
         </div><!--CALL-TO-ACTION CONTAINER END-->
     </div><!--CALL-TO-ACTION OVERLAY END-->
 </div><!--CALL-TO-ACTION END-->
   
-    
-    
-    
+<div  id="exampleModalCenter" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Puzzle #1</h4>
+                </div>
+                <div class="modal-body">
+                        <div >
+                                <img src="img/o1.png" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ===========================
     FOOTER
     =========================== -->
