@@ -118,7 +118,7 @@
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
-                <img src="img/o3.png" alt="">
+                <img src="img/o6.png" alt="">
                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
                         Puzzle #3
                 </button>
@@ -139,8 +139,8 @@
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
-                <img src="img/o6.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                <img src="img/o3.png" alt="">
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#puzzle6">
                         Puzzle #6
                 </button>
             </div><!--ITEM END-->
@@ -170,23 +170,76 @@
     </div><!--CALL-TO-ACTION OVERLAY END-->
 </div><!--CALL-TO-ACTION END-->
   
-<div  id="exampleModalCenter" class="modal fade">
+<div  id="puzzle6" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Puzzle #1</h4>
+                    <h4 class="modal-title">Puzzle #6</h4>
                 </div>
                 <div class="modal-body">
-                        <div >
-                                <img src="img/o1.png" alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/o3.png" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                     <h3>Who is Alexa's favorite reindeer?</h3>
+                                     <select id="myselect" onchange="getval(this,6);">
+                                            <option value="0">-- Choose Reindeer --</option>
+                                            <option value="1">Dasher</option>
+                                            <option value="2">Dancer</option>
+                                            <option value="3">Prancer</option>
+                                            <option value="4">Vixen</option>
+                                            <option value="5">Comet</option>
+                                            <option value="6">Cupid</option>
+                                            <option value="7">Donner</option>
+                                            <option value="8">Blixem</option>
+                                            <option value="9">Rudolph</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <div id="puzzle6Incorrect" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="img/santa_cap.png" alt="">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h4>Sorry the hat does not fit, try again...</h4>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div id="puzzle6Correct" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img class="wow tada infinite" data-wow-duration="10s" src="img/santa-sm.png" alt="">
+                                            </div>
+                                            <div class="col-md-5" align="center">
+                                                    <h2><span class="highlight">Congrats!!!</span></h2>
+                                                    <div class="col-md-12">
+                                                        <h3>9 = I, 0 = O, z = Y</h3>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+
+
+
     <!-- ===========================
     FOOTER
     =========================== -->
@@ -207,5 +260,21 @@
     <script src="js/wow.min.js"></script>
     <script src="js/snowstorm-min.js"></script>
     <script>new WOW().init();</script>    
+    <script>
+        function getval(sel,puzzle)
+        {
+            answer = ['2','2','2','2','2','8'];
+            if (sel.value == answer[puzzle-1])
+            {
+            $('#puzzle'+puzzle+'Correct').show();
+            $('#puzzle'+puzzle+'Incorrect').hide();
+            }
+            else
+            {
+                $('#puzzle'+puzzle+'Correct').hide();
+            $('#puzzle'+puzzle+'Incorrect').show();
+            }
+        }
+            </script>
 </body>
 </html>
