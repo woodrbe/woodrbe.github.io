@@ -245,7 +245,8 @@ input:focus {
 INPUT FIELDS
 --------------------- */
 input {
-    padding: 10px 30px;
+    width: 65px;
+    padding: 10px 20px;
     border-radius: 30px;
     border: 2px solid #b2b2b2;
     margin: 30px 5px;
