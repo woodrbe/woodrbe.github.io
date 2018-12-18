@@ -95,8 +95,8 @@
     <div id="overview" class="container">       
         <!--SECTIONHEAD START-->
         <div class="sectionhead">            
-            <h2>Solve <span class="highlight">puzzles</span> to reveal your prize location</h2>
-            <p>Each puzzle will reveal a clue to the final location of the prize. </p>
+            <h2>Solve <span class="highlight">puzzles</span> to reveal your present's location</h2>
+            <p>Each puzzle will reveal a clue to the final location of your presents. </p>
             <hr>
         </div><!--SECTIONHEAD END-->
         
@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <img src="img/o1.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalSocial">
+                <button type="button" class="button" data-toggle="modal" data-target="#modalSocial">
                         Puzzle #1
                 </button>
                 
@@ -112,35 +112,35 @@
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o2.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="button" data-toggle="modal" data-target="#exampleModalCenter">
                         Puzzle #2
                 </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o6.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzle3">
                         Puzzle #3
                 </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o4.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzle4">
                         Puzzle #4
                 </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o5.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzle5">
                         Puzzle #5
                 </button>
             </div><!--ITEM END-->
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o3.png" alt="">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#puzzle6">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzle6">
                         Puzzle #6
                 </button>
             </div><!--ITEM END-->
@@ -161,7 +161,7 @@
                 <h2>Reveal <span class="highlight">final puzzle </span></h2>
                 <p></p>
 
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#puzzleFinal">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzleFinal">
                     Reveal
                   </button>
 
@@ -169,7 +169,248 @@
         </div><!--CALL-TO-ACTION CONTAINER END-->
     </div><!--CALL-TO-ACTION OVERLAY END-->
 </div><!--CALL-TO-ACTION END-->
-  
+<div  id="puzzle3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Puzzle #3</h4>
+                </div>
+                <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/o6.png" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                     <h3>What is the last two words of Daddy's favorite christmas song?</h3>
+                                     <select id="myselect" onchange="getval(this,3);">
+                                            <option value="0">-- Choose Song --</option>
+                                            <option value="1">Baby Boy</option>
+                                            <option value="2">Red Nose</option>
+                                            <option value="3">Cold outside</option>
+                                            <option value="4">Christmas Tree</option>
+                                            <option value="5">Toys Toys</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                        <div id="puzzle3Incorrect" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="img/santa_cap.png" alt="">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h4>Sorry the hat does not fit, try again...</h4>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div id="puzzle3Correct" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img class="wow tada infinite" data-wow-duration="10s" src="img/santa-sm.png" alt="">
+                                            </div>
+                                            <div class="col-md-5" align="center">
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="6" style="text-align:center;"> 
+                                                            <h2><span class="highlight">Final Puzzle Clue</span></h2>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                                <img src="img/E.png" height="75" alt="">
+                                                        </td>
+                                                        <td width="60">
+                                                                <h3> = E</h3>
+                                                        </td>
+                                                            <td>
+                                                                    <img src="img/W.png" height="75" alt="">
+                                                            </td>
+                                                            <td width="60">
+                                                                    <h3> = W</h3>
+                                                            </td>
+
+                                                            </tr>
+                                                </table>
+                                                 </div>
+                                          </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+<div  id="puzzle4" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Puzzle #4</h4>
+                </div>
+                <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="img/truck.jpg" height="150px" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                     <h3>A new version has a new number?</h3>
+                                     <select id="myselect" onchange="getval(this,4);">
+                                            <option value="0">-- Choose Number --</option>
+                                            <option value="1">ABC-123</option>
+                                            <option value="2">134-ARC</option>
+                                            <option value="3">8K5-OK3</option>
+                                            <option value="4">615-498-4986</option>
+                                            <option value="4">1</option>
+                                            <option value="5">I can't count?</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                        <div id="puzzle4Incorrect" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="img/santa_cap.png" alt="">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h4>Sorry the hat does not fit, try again...</h4>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div id="puzzle4Correct" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-2" align="center">
+                                                <img class="wow tada infinite" data-wow-duration="10s" src="img/santa-sm.png" alt="">
+                                            </div>
+                                            <div class="col-md-5" align="center">
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="6" style="text-align:center;"> 
+                                                            <h2><span class="highlight">Final Puzzle Clue</span></h2>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                                <img src="img/M.png" height="75" alt="">
+                                                        </td>
+                                                        <td width="60">
+                                                                <h3> = M</h3>
+                                                        </td>
+                                                            <td>
+                                                                    <img src="img/S.png" height="75" alt="">
+                                                            </td>
+                                                            <td width="60">
+                                                                    <h3> = S</h3>
+                                                            </td>
+                                                                <td>
+                                                                        <img src="img/H.png" height="75" alt="">
+                                                                </td>
+                                                                <td width="60">
+                                                                        <h3> = H</h3>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                                 </div>
+                                          </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+<div  id="puzzle5" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Puzzle #6</h4>
+                </div>
+                <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="img/o5.png" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                     <h3>What cowboy sang Rudoph the Red Nose Reindeer?</h3>
+                                     <select id="myselect" onchange="getval(this,5);">
+                                            <option value="0">-- Choose Singer --</option>
+                                            <option value="1">John Wayne</option>
+                                            <option value="2">Clint Eastwood</option>
+                                            <option value="3">Roy Rogers</option>
+                                            <option value="4">Gene Autry</option>
+                                            <option value="5">Cowbys can sing?</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                        <div id="puzzle5Incorrect" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="img/santa_cap.png" alt="">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h4>Sorry the hat does not fit, try again...</h4>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div id="puzzle5Correct" style="display: none;" >
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img class="wow tada infinite" data-wow-duration="10s" src="img/santa-sm.png" alt="">
+                                            </div>
+                                            <div class="col-md-5" align="center">
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="6" style="text-align:center;"> 
+                                                            <h2><span class="highlight">Final Puzzle Clue</span></h2>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                                <img src="img/D.png" height="75" alt="">
+                                                        </td>
+                                                        <td width="60">
+                                                                <h3> = D</h3>
+                                                        </td>
+                                                            <td>
+                                                                    <img src="img/L.png" height="75" alt="">
+                                                            </td>
+                                                            <td width="60">
+                                                                    <h3> = L</h3>
+                                                            </td>
+                                                                <td>
+                                                                        <img src="img/T.png" height="75" alt="">
+                                                                </td>
+                                                                <td width="60">
+                                                                        <h3> = T</h3>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                                 </div>
+                                          </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
 <div  id="puzzle6" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -225,27 +466,27 @@
                                                 <table>
                                                     <tr>
                                                         <td colspan="6" style="text-align:center;"> 
-                                                            <h2><span class="highlight">Congrats!!!</span></h2>
+                                                            <h2><span class="highlight">Final Puzzle Clue</span></h2>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                                <img src="img/christmas_santa_christmas_2.png" height="75" alt="">
+                                                                <img src="img/I.png" height="75" alt="">
                                                         </td>
                                                         <td width="60">
-                                                                <h3> = A</h3>
+                                                                <h3> = I</h3>
                                                         </td>
                                                             <td>
-                                                                    <img src="img/christmas_tree.png" height="75" alt="">
+                                                                    <img src="img/O.png" height="75" alt="">
                                                             </td>
                                                             <td width="60">
-                                                                    <h3> = T</h3>
+                                                                    <h3> = O</h3>
                                                             </td>
                                                                 <td>
-                                                                        <img src="img/jingle.png" height="75" alt="">
+                                                                        <img src="img/Y.png" height="75" alt="">
                                                                 </td>
                                                                 <td width="60">
-                                                                        <h3> = G</h3>
+                                                                        <h3> = Y</h3>
                                                                 </td>
                                                             </tr>
                                                 </table>
@@ -268,24 +509,37 @@
                  <table>
                      <tr>
                          <td style="text-align:center;">
-                                <img src="img/christmas_santa_christmas_2.png" height="75" alt=""> 
+                                <img src="img/W.png" height="75" alt=""> 
                          </td>
                          <td style="text-align:center;">
-                                <img src="img/christmas_santa_christmas_2.png" height="75" alt=""> 
+                                <img src="img/H.png" height="75" alt=""> 
                          </td>
                          <td style="text-align:center;">
-                                <img src="img/christmas_santa_christmas_2.png" height="75" alt=""> 
+                                <img src="img/E.png" height="75" alt=""> 
                          </td>
                          <td style="text-align:center;">
-                                <img src="img/christmas_santa_christmas_2.png" height="75" alt=""> 
+                                <img src="img/R.png" height="75" alt=""> 
                          </td>
                          <td style="text-align:center;">
-                                <img src="img/christmas_santa_christmas_2.png" height="75" alt=""> 
+                                <img src="img/E.png" height="75" alt=""> 
                          </td>
-                         <td width="100">
-                        </td>
                         <td style="text-align:center;">
-                                <img src="img/christmas_santa_christmas_2.png" height="75" alt=""> 
+                                <img src="img/S.png" height="75" alt=""> 
+                         </td>
+                         <td style="text-align:center;">
+                                <img src="img/T.png" height="75" alt=""> 
+                         </td>
+                         <td style="text-align:center;">
+                                <img src="img/O.png" height="75" alt=""> 
+                         </td>
+                         <td style="text-align:center;">
+                                <img src="img/M.png" height="75" alt=""> 
+                         </td>
+                         <td style="text-align:center;">
+                                <img src="img/P.png" height="75" alt=""> 
+                         </td>
+                         <td style="text-align:center;">
+                                <img src="img/Y.png" height="75" alt=""> 
                          </td>
                      </tr>
                      <tr>
@@ -293,23 +547,114 @@
                                 <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
                          </td>
                          <td>
-                                <input type="text">
-                            </td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                        <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+                         <td>
+                                <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                         </td>
+
+                     </tr>
+                     <tr>
+                            <td style="text-align:center;">
+                                    <img src="img/L.png" height="75" alt=""> 
+                             </td>
+                             <td style="text-align:center;">
+                                    <img src="img/A.png" height="75" alt=""> 
+                             </td>
+                             <td style="text-align:center;">
+                                    <img src="img/Y.png" height="75" alt=""> 
+                             </td>
+                             <td style="text-align:center;">
+                                    <img src="img/S.png" height="75" alt=""> 
+                             </td>
+                             <td width="100">
+                                </td>
+                                <td style="text-align:center;">
+                                        <img src="img/H.png" height="75" alt=""> 
+                                 </td>
+                                 <td style="text-align:center;">
+                                        <img src="img/I.png" height="75" alt=""> 
+                                 </td>
+                                 <td style="text-align:center;">
+                                        <img src="img/S.png" height="75" alt=""> 
+                                 </td>
+                     </tr>
+                     <tr>
                             <td>
-                                    <input type="text">
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td width="100">
                                 </td>
                                 <td>
-                                        <input type="text">
-                                    </td>
-                                    <td>
-                                            <input type="text">
-                                        </td>
-                                        <td width="100">
-                                            </td>
-                                            <td>
-                                                    <input type="text">
-                                                </td>
-
+                                        <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                                 </td>
+                                 <td>
+                                        <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                                 </td>
+                                 <td>
+                                        <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                                 </td>
+                     </tr>
+                     <tr>
+                            <td style="text-align:center;">
+                                    <img src="img/H.png" height="75" alt=""> 
+                             </td>
+                             <td style="text-align:center;">
+                                    <img src="img/E.png" height="75" alt=""> 
+                             </td>
+                             <td style="text-align:center;">
+                                    <img src="img/A.png" height="75" alt=""> 
+                             </td>
+                             <td style="text-align:center;">
+                                    <img src="img/D.png" height="75" alt=""> 
+                             </td>
+                     </tr>
+                     <tr>
+                            <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>
+                             <td>
+                                    <input type="text" id="Textbox" name="Textbox" maxlength="1" style="text-transform:uppercase" />
+                             </td>  
                      </tr>
                  </table>
             </div>
@@ -346,7 +691,7 @@
     <script>
         function getval(sel,puzzle)
         {
-            answer = ['2','2','2','2','2','8'];
+            answer = ['2','2','1','3','4','8'];
             if (sel.value == answer[puzzle-1])
             {
             $('#puzzle'+puzzle+'Correct').show();
