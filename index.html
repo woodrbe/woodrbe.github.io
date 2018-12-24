@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <img src="img/o1.png" alt="">
-                <button type="button" class="button" data-toggle="modal" data-target="#modalSocial">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzle1">
                         Puzzle #1
                 </button>
                 
@@ -112,7 +112,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <img src="img/o2.png" alt="">
-                <button type="button" class="button" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="button" data-toggle="modal" data-target="#puzzle2">
                         Puzzle #2
                 </button>
             </div><!--ITEM END-->
@@ -183,21 +183,21 @@
                                 <img src="img/o1.png" alt="">
                             </div>
                             <div class="col-md-4">
-                                 <h3>What is the last two words of Daddy's favorite christmas song?</h3>
-                                 <select id="myselect" onchange="getval(this,3);">
-                                        <option value="0">-- Choose Song --</option>
-                                        <option value="1">Baby Boy</option>
-                                        <option value="2">Red Nose</option>
-                                        <option value="3">Cold outside</option>
-                                        <option value="4">Christmas Tree</option>
-                                        <option value="5">Toys Toys</option>
+                                 <h3>When Santa Claus sets off from the North Pole on Christmas Eve, in which direction does he travel?</h3>
+                                 <select id="myselect" onchange="getval(this,1);">
+                                        <option value="0">-- Choose Answer --</option>
+                                        <option value="1">North</option>
+                                        <option value="2">South</option>
+                                        <option value="3">East</option>
+                                        <option value="4">West</option>
+                                        <option value="5">Up</option>
                                     </select>
                             </div>
                         </div>
                     </div>
             </div>
             <div class="modal-footer">
-                    <div id="puzzle3Incorrect" style="display: none;" >
+                    <div id="puzzle1Incorrect" style="display: none;" >
                             <div class="container">
                                     <div class="row">
                                         <div class="col-md-1">
@@ -210,7 +210,7 @@
                             </div>
                     </div>
                     </div>
-                    <div id="puzzle3Correct" style="display: none;" >
+                    <div id="puzzle1Correct" style="display: none;" >
                             <div class="container">
                                     <div class="row">
                                         <div class="col-md-1">
@@ -254,7 +254,7 @@
                                     </div>
                                     <div class="col-md-4">
                                          <h3>What did Penny give Sheldon for Christmas?</h3>
-                                         <select id="myselect" onchange="getval(this,3);">
+                                         <select id="myselect" onchange="getval(this,2);">
                                                 <option value="0">-- Choose Gift --</option>
                                                 <option value="1">Laser</option>
                                                 <option value="2">Science Set</option>
@@ -333,7 +333,7 @@
                                      <h3>What is the last two words of Daddy's favorite christmas song?</h3>
                                      <select id="myselect" onchange="getval(this,3);">
                                             <option value="0">-- Choose Song --</option>
-                                            <option value="1">Baby Boy</option>
+                                            <option value="1">Baby Is</option>
                                             <option value="2">Red Nose</option>
                                             <option value="3">Cold outside</option>
                                             <option value="4">Christmas Tree</option>
@@ -838,7 +838,7 @@
     <script>
         function getval(sel,puzzle)
         {
-            answer = ['2','2','1','3','4','8'];
+            answer = ['2','3','1','3','4','8'];
             if (sel.value == answer[puzzle-1])
             {
             $('#puzzle'+puzzle+'Correct').show();
